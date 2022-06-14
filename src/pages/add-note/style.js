@@ -58,10 +58,20 @@ export const HeaderWrapper = styled.div`
 `
 
 export const ContentWrapper = styled.div`
+    display: flex;
     height: 500px;
     
-    .textarea{
+    .textarea,.show-html{
+        width: 860px;
         min-height: calc(100vh - 300px);
+    }
+
+    .textarea{
         background-color: rgba(10, 150, 122, 0.1);
+    }
+
+    .show-html{
+        border: 1px solid #d9d9d9;
+        border-left: none;
     }
 `

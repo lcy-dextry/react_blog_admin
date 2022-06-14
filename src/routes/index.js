@@ -3,11 +3,12 @@ import { useRoutes,Navigate } from 'react-router-dom';
 // 自定义
 import Home from '@/pages/home';
 import Note from '@/pages/notes';
+import Draft from '@/pages/drafts';
 import AddNote from '@/pages/add-note';
 import Picture from '@/pages/pic';
 import AddGallery from '@/pages/add-gallery';
-import Message from '@/pages/message';
-import AddMessage from '@/pages/add-message';
+import Diary from '@/pages/diary';
+import AddDiary from '@/pages/add-diary';
 import About from '@/pages/about';
 
 
@@ -16,11 +17,14 @@ function RoutesMap() {
         {path: '/admin', element: <Navigate to='/admin/home' />},
         {path: '/admin/home', element: <Home />},
         {path: '/admin/note', element: <Note />},
+        {path: '/admin/draft', element: <Draft />},
         {path: '/admin/addNote', element: <AddNote />},
+        {path: '/admin/addNote:id', element: <AddNote />},
         {path: '/admin/pic', element: <Picture />},
         {path: '/admin/addGallery', element: <AddGallery />},
-        {path: '/admin/msg', element: <Message />},
-        {path: '/admin/addMsg', element: <AddMessage />},
+        {path: '/admin/addGallery:id', element: <AddGallery />},
+        {path: '/admin/diary', element: <Diary />},
+        {path: '/admin/addDiary', element: <AddDiary />},
         {path: '/admin/about', element: <About />}
     ])
     return routes;

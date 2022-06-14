@@ -7,20 +7,18 @@ import { TagInputWrapper } from './style';
 // 自定义
 import { noteTags } from '@/common/local-data';
 
-const TagInput = memo(() => {
+const TagInput = memo((props) => {
+    const { tags, setTags } = props;
     const { Option } = Select;
-    const handleChange = (value) => {
-        console.log(`selected ${value}`);
-    };
 
     return (
         <TagInputWrapper>
             <span>文章标签: </span>
             <Select
+                value={tags}
                 className='tag'
                 mode="multiple"
-                allowClear
-                onChange={handleChange}
+                onChange={value => setTags(value)}
             >
                 {
                     noteTags.map(item => {

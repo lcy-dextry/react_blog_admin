@@ -1,0 +1,9 @@
+export const isContained = (a, b) => {
+    if (!(a instanceof Array) || !(b instanceof Array)) return false;
+    const len = b.length;
+    if (a.length < len) return false;
+    for (let i = 0; i < len; i++) {
+        if (!a.includes(b[i])) return false;
+    }
+    return true;
+};

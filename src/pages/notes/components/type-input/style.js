@@ -11,7 +11,7 @@ export const TypeInputWrapper = styled.div`
         width: 360px;
         height: 40px;
 
-            .ant-select-selection-placeholder{
+            .ant-select-selection-item{
                 position: absolute;
                 top: 5px;
                 height: 30px;

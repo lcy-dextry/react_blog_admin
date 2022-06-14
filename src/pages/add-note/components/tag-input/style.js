@@ -20,5 +20,17 @@ export const TagInputWrapper = styled.div`
             width: 740px;
             height: 32px;
         }
+
+        .ant-select-selection-item{
+            margin: 0;
+            background-color: #1DA57A;
+            span{
+                height: 24px;
+                line-height: 24px;
+                margin: 0;
+                font-size: 12px;
+                color: #FFF;
+            }
+        }
     }
 `

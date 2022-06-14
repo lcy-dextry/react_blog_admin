@@ -1,0 +1,2 @@
+export const ADD_GALLERY = 'ADD_GALLERY';
+export const UPDATE_GALLERY = 'UPDATE_GALLERY';

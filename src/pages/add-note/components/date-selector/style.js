@@ -50,10 +50,7 @@ export const DateWrapper = styled.div`
                 }
             }
 
-        }
-
-        
-        
+        }  
    }
 
 `

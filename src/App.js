@@ -16,7 +16,7 @@ const App = memo(() => {
         <NavBar />
         <AppHeader />
         <RoutesMap />
-        <AppFooter />
+        {/* <AppFooter /> */}
       </BrowserRouter>
     </Provider>
   )

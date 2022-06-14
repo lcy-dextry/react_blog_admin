@@ -7,26 +7,21 @@ import { Select } from 'antd';
 import { noteTypes } from '@/common/local-data';
 import { TypeInputWrapper } from './style';
 
-const TypeInput = memo(() => {
-    // 笔记Type    
+const TypeInput = memo((props) => {
+    // 笔记Type  
+    const { type, setType } = props;
     const { Option } = Select;
-    const onChange = (value) => {
-        console.log(`selected ${value}`);
-    };
-    const onSearch = (value) => {
-        console.log('search:', value);
-    };
 
     return (
         <TypeInputWrapper>
             <span>文章类型: </span>
             <Select
+                value={type}
                 className='type'
                 showSearch
                 optionFilterProp="children"
-                onChange={onChange}
-                onSearch={onSearch}
                 filterOption={(input, option) => option.children.toLowerCase().includes(input.toLowerCase())}
+                onChange={value => setType(value)}
             >
                 {
                     noteTypes.map(item => {

@@ -4,18 +4,16 @@ import React, { memo } from 'react';
 import { DatePicker } from 'antd';
 import { DateWrapper } from './style';
 
-const DateSelector = memo(() => {
-    const onChange = (date, dateString) => {
-        console.log(date, dateString);
-    };
+const DateSelector = memo((props) => {
+    const { setDate } = props;
 
     return (
         <DateWrapper>
             <span>时间: </span>
             <DatePicker
                 className='date-selector'
-                placeholder = ''
-                onChange={onChange} />
+                placeholder=''
+                onChange={(date, dateString) => setDate(dateString)} />
         </DateWrapper>
     )
 })

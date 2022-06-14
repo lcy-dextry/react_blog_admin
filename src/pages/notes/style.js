@@ -20,8 +20,16 @@ export const HeaderWrapper = styled.div`
         line-height: 40px;
         margin-top: 5px;
         margin-right: 5px;
-        font-size: 16px;
-        color: gray;
+        
+
+        .ant-input{
+            height: 40px;
+            font-size: 16px;
+            color: gray;
+        }
+        button{
+            height: 40px;
+        }
     }
 
     .reset{
@@ -31,4 +39,8 @@ export const HeaderWrapper = styled.div`
         font-size: 18px;
     }
     
+`
+
+export const TableWrapper = styled.div`
+
 `

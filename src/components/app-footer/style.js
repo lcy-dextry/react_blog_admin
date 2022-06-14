@@ -1,6 +1,7 @@
 import styled  from "styled-components";
 
 export const AppFooterWrapper = styled.div`
+    position: absolute;
     bottom: 10px;
     height: 70px;
     font-size: 16px;
