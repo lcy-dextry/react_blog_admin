@@ -14,6 +14,7 @@ import About from '@/pages/about';
 
 function RoutesMap() {
     const routes = useRoutes([
+        {path: '', element: <Navigate to='/admin/home' />},
         {path: '/admin', element: <Navigate to='/admin/home' />},
         {path: '/admin/home', element: <Home />},
         {path: '/admin/note', element: <Note />},

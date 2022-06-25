@@ -65,7 +65,7 @@ const AddGallery = memo(() => {
       return;
     }
     getDetail();
-  }, [isEdit, isJudged]);
+  }, [allgallery, document.location.search]);
 
   // 添加相册
   const addGallery = () => {

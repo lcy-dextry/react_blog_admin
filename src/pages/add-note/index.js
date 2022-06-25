@@ -53,29 +53,24 @@ const AddNote = memo(() => {
     setIsJudged(true);
   }, [document.location.search]);
 
-  // 获取修改文章详情
-  const getDetail = () => {
-    const detailObj = allnotes.filter(item => item._id === id)[0]
-
-    const { title, titleEng, content, markdownContent, tags, type, date } = detailObj;
-    setTitle(title);
-    setTitleEng(titleEng);
-    setTags(tags);
-    setType(type);
-    setMarkdownContent(markdownContent)
-    setContent(content);
-    setDate(date);
-  };
-
   // 自动填入笔记详情
   useEffect(() => {
     if (!isJudged) return;
     if (!isEdit) {
       setDate(moment().format('YYYY-MM-DD HH:mm:ss').replace(/ /g, ' '));
       return;
+    } else {
+      const detailObj = allnotes.filter(item => item._id === id)[0]
+      const { title, titleEng, content, markdownContent, tags, type, date } = detailObj;
+      setTitle(title);
+      setTitleEng(titleEng);
+      setTags(tags);
+      setType(type);
+      setMarkdownContent(markdownContent)
+      setContent(content);
+      setDate(date);
     }
-    getDetail(true);
-  }, [isEdit, isJudged]);
+  }, [allnotes,document.location.search]);
 
   // 配置marked
   marked.setOptions({
