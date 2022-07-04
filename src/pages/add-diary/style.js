@@ -63,10 +63,12 @@ export const ContentWrapper = styled.div`
     }
 
     .textarea{
+        overflow: visible;
         background-color: rgba(10, 150, 122, 0.1);
     }
 
     .show-html{
+        overflow-y: scroll !important;
         border: 1px solid #d9d9d9;
         border-left: none;
     }

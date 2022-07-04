@@ -31,8 +31,8 @@ const Picture = memo(() => {
           allgallery.map(item => {
             const info = { url: item.cover, type: item.title, desc: item.sketch };
             return (
-              <NavLink to={`/admin/addGallery?id=${item._id}`}>
-                <PicCard key={nanoid()} info={info} />
+              <NavLink key={nanoid()} to={`/admin/addGallery?id=${item._id}`}>
+                <PicCard info={info} />
               </NavLink>
             )
           })

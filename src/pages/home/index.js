@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 // 工具
 import { BlogStatusWrapper, HeaderWrapper, HomeWrapper } from './style'
 import { blogStatus } from '@/common/local-data';
+import { nanoid } from 'nanoid';
 
 // 自定义
 import Welcome from './components/welcome';
@@ -25,9 +26,9 @@ const Home = memo(() => {
         {
           blogStatus.map(item => {
             return (
-              <NavLink to={item.link}>
+              <NavLink key={nanoid()} to={item.link}>
                 <Card title={item.title}
-                    Count={<BlogTypeCount type={item.title} />} />
+                  Count={<BlogTypeCount type={item.title} />} />
               </NavLink>
             )
           })

@@ -71,6 +71,7 @@ export const ContentWrapper = styled.div`
     }
 
     .show-html{
+        overflow-y: scroll;
         border: 1px solid #d9d9d9;
         border-left: none;
     }
