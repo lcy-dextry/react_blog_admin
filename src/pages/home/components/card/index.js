@@ -7,7 +7,7 @@ const Card = memo((props) => {
     const { Count, title } = props;
     return (
         <CardWrapper>
-            <div className='title'>{`${title}数`}</div>
+            <div className='title'>{`${title}`}</div>
             {Count}
         </CardWrapper>
     )

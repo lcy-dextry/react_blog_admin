@@ -5,6 +5,7 @@ import Home from '@/pages/home';
 import Note from '@/pages/notes';
 import Draft from '@/pages/drafts';
 import AddNote from '@/pages/add-note';
+import AddDraft from '@/pages/add-draft';
 import Picture from '@/pages/pic';
 import AddGallery from '@/pages/add-gallery';
 import Diary from '@/pages/diary';
@@ -21,6 +22,8 @@ function RoutesMap() {
         {path: '/admin/draft', element: <Draft />},
         {path: '/admin/addNote', element: <AddNote />},
         {path: '/admin/addNote:id', element: <AddNote />},
+        {path: '/admin/addDraft', element: <AddDraft />},
+        {path: '/admin/addDraft:id', element: <AddDraft />},
         {path: '/admin/pic', element: <Picture />},
         {path: '/admin/addGallery', element: <AddGallery />},
         {path: '/admin/addGallery:id', element: <AddGallery />},

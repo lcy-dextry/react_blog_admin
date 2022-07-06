@@ -4,6 +4,7 @@ export const navLinks = [
     {title: '笔记', link: '/admin/note'},
     {title: '图库', link: '/admin/pic'},
     {title: '日记', link: '/admin/diary'},
+    {title: '草稿', link: '/admin/draft'},
     // {title: '关于', link: '/admin/about'}
 ]
 
@@ -32,9 +33,11 @@ export const notice = '欢迎大家访问交流！'
 
 // Home Status
 export const blogStatus = [
-  {title: '笔记', link: '/admin/note'},
-  {title: '图库', link: '/admin/pic'},
-  {title: '日记', link: '/admin/diary'}
+  {title: '数据库', link: '#'},
+  {title: '笔记数', link: '/admin/note'},
+  {title: '图库数', link: '/admin/pic'},
+  {title: '日记数', link: '/admin/diary'},
+  {title: '草稿数', link: '/admin/draft'},
 ]
 
 // 前台展示页面url

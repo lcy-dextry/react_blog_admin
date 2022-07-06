@@ -73,3 +73,28 @@ export const updateNotesAction = (title, titleEng, content, markdownContent, tag
             });
     }
 }
+
+// 更新草稿
+const updateDrafts = res => ({
+    type: actionType.UPDATE_DRAFTS,
+    drafts: res.data
+})
+
+export const updateDraftsAction = (title, titleEng, content, markdownContent, tags, type, date, id) => {
+    return dispatch => {
+        db.collection('drafts')
+            .doc(id)
+            .update({
+                title,
+                titleEng,
+                content,
+                markdownContent,
+                tags,
+                type,
+                date,
+            })
+            .then(res => {
+                dispatch(updateDrafts(res))
+            });
+    }
+}

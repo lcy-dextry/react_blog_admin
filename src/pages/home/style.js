@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.div`
 export const BlogStatusWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: space-between;
     width: 1720px;
     height: 140px;
     margin-top: 30px;
