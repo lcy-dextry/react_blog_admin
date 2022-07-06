@@ -4,7 +4,7 @@ export const navLinks = [
     {title: '笔记', link: '/admin/note'},
     {title: '图库', link: '/admin/pic'},
     {title: '日记', link: '/admin/diary'},
-    {title: '关于', link: '/admin/about'}
+    // {title: '关于', link: '/admin/about'}
 ]
 
 // Github地址
