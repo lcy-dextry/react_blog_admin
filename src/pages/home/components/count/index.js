@@ -62,7 +62,8 @@ const BlogTypeCount = memo((props) => {
                 break;
             }
         }
-    }, [type]);
+    })
+
     return (
         <div className='count'>{count}</div>
     );

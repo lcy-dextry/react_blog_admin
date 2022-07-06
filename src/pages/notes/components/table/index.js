@@ -77,7 +77,7 @@ const NotesTable = memo((props) => {
               删除
             </Button>
           </Popconfirm>
-          <MyButton url={`/admin/addNote?id=${record._id}`} text={'修改'}/>
+          <MyButton url={`/admin/addNote?id=${record._id}`} text={'修改'} />
         </>
       )
     },
